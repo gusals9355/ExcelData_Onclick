@@ -29,4 +29,6 @@ https://www.java.com/ko/download/
 
 ### 다른 에러사항 말해주면 고침
 
+<hr>
+
 2021-11-17 / URL주소를 통한 csv파일 인코딩이 대부분 ANSI지만, UTF-8(BOM)파일 형식에 따른 인코딩 설정 방법 수정.

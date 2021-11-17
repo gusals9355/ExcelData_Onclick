@@ -27,8 +27,12 @@ public class GetData {
         String line;
         int index=0;
         ArrayList<String> list = new ArrayList<>();
+        String encoding = "EUC-KR";
         try {
-            br = new BufferedReader(new InputStreamReader(new FileInputStream("C:/Users/user/Downloads/"+filename),"euc-kr"));
+            if(!Encoding.getEncoding(filename).equals(encoding)){
+                encoding = "UTF-8";
+            }
+            br = new BufferedReader(new InputStreamReader(new FileInputStream("C:/Users/user/Downloads/"+filename), encoding));
             int cnt=-1;
             while((line = br.readLine()) != null) {
                 String[] temp = line.split(","); // 쉼표로 구분
